@@ -1,5 +1,5 @@
 function sumth_run() {
-    var statuses = ["新規/NEW", "進行中/Progress", "フィードバック/Feed back", "終了/Finish"];
+    var statuses = ["新規/NEW", "進行中/Progress", "フィードバック/Feed back", "解決/Solved", "終了/Finish"];
     var tickets  = $('#content .issues tbody .issue');
     var summary  = statuses.map(function(status) {
         var status_ticket = tickets.filter(function(i, e){ return $(e).find(".status").text() === status }).toArray();
